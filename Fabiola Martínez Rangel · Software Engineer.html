@@ -1,0 +1,306 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Fabiola Martínez Rangel · Software Engineer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#f5f6f9;--surface:#ffffff;--ink:#16182a;--muted:#5b5f78;--line:#dfe1ea;
+  --stain:#8e1d5c;--stain-soft:#f3e3ec;--cell:#e9b7c9;--nucleus:#5a2d7a;
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",sans-serif;
+  --body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11121c;--surface:#191b28;--ink:#ecedf4;--muted:#a3a6bd;--line:#2b2e42;--stain:#e77aae;--stain-soft:#2c1a27;--cell:#5b3247;--nucleus:#b58ad6;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#11121c;--surface:#191b28;--ink:#ecedf4;--muted:#a3a6bd;--line:#2b2e42;--stain:#e77aae;--stain-soft:#2c1a27;--cell:#5b3247;--nucleus:#b58ad6;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+a{color:var(--stain);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--stain);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* Lang toggle */
+.lang-bar{display:flex;justify-content:flex-end;padding-top:20px;gap:6px}
+.lang-btn{font-family:var(--mono);font-size:12px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;letter-spacing:.06em}
+.lang-btn.active{background:var(--stain);border-color:var(--stain);color:var(--bg)}
+.lang-btn:hover:not(.active){border-color:var(--stain);color:var(--stain)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px;align-items:center;padding-block:48px 56px}
+.hero h1{font-size:clamp(40px,6.4vw,72px);font-weight:800;line-height:.98;letter-spacing:-.02em}
+.hero h1 span{color:var(--stain)}
+.role{font-size:19px;color:var(--muted);margin:20px 0 28px;max-width:34ch}
+.contact{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;font:500 14px var(--body);padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);text-decoration:none;cursor:pointer}
+.chip:hover{border-color:var(--stain)}
+.chip.primary{background:var(--stain);border-color:var(--stain);color:var(--bg)}
+.copied{font-family:var(--mono);font-size:12px;color:var(--stain);min-height:18px;margin-top:8px}
+.smear{position:relative;aspect-ratio:1;max-width:100%;border-radius:50%;overflow:hidden;background:var(--stain-soft);border:1px solid var(--line)}
+.smear canvas{width:100%;height:100%;display:block}
+.smear-cap{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center;margin-top:12px}
+
+/* Sections */
+section{display:grid;grid-template-columns:180px minmax(0,1fr);gap:32px;padding-block:48px;border-top:1px solid var(--line)}
+section>.label{padding-top:8px}
+.stack{display:grid;gap:28px;min-width:0}
+h2{font-size:30px;font-weight:700;letter-spacing:-.01em}
+h3{font-size:22px;font-weight:700}
+.meta{font-family:var(--mono);font-size:13px;color:var(--muted);margin:4px 0 12px}
+p{margin:0;max-width:65ch}
+ul{margin:10px 0 0;padding-left:20px;max-width:65ch}
+li{margin-bottom:6px}
+
+/* SAP flow */
+.flow{overflow-x:auto;margin-top:18px;padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.flow-grid{display:grid;grid-template-columns:repeat(5,minmax(112px,1fr));gap:10px;min-width:600px}
+.mod{font:500 14px var(--body);padding:12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);text-align:center}
+.mod small{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:2px}
+.arrows{grid-column:1/-1;height:28px;position:relative}
+.arrows svg{width:100%;height:100%;display:block}
+.sap{grid-column:1/-1;text-align:center;font:600 14px var(--body);padding:12px;border-radius:8px;background:var(--stain);color:var(--bg)}
+.sap span{font-family:var(--mono);font-weight:400;font-size:12px;opacity:.85}
+
+/* Game embed */
+.game-wrap{margin-top:18px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:800/600;width:100%;max-width:100%}
+.game-wrap iframe{width:100%;height:100%;border:none;display:block}
+.game-note{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:8px}
+
+/* Cards */
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;min-width:0;display:flex;flex-direction:column;gap:6px}
+.stat{display:flex;gap:20px;flex-wrap:wrap;margin-top:12px;font-variant-numeric:tabular-nums}
+.stat div{font-family:var(--display);font-size:28px;font-weight:700;color:var(--stain);line-height:1}
+.stat small{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);font-weight:400;margin-top:4px;letter-spacing:.04em}
+.pub{margin-top:12px;font-size:14px;color:var(--muted);border-left:2px solid var(--stain);padding-left:12px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.skills h3{font-size:16px;margin-bottom:8px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:var(--mono);font-size:12px;padding:4px 9px;border-radius:6px;background:var(--stain-soft);color:var(--ink)}
+footer{border-top:1px solid var(--line);padding-block:40px 56px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media(max-width:760px){
+  .hero{grid-template-columns:1fr;padding-block:40px 32px;gap:28px}
+  .smear-box{max-width:300px}
+  section{grid-template-columns:1fr;gap:12px;padding-block:36px}
+  .pair{grid-template-columns:1fr}
+}
+</style>
+
+<div class="wrap">
+  <div class="lang-bar">
+    <button class="lang-btn active" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <header class="hero">
+    <div>
+      <p class="label" data-es="Ingeniera de Software · Oaxaca, México" data-en="Software Engineer · Oaxaca, México">Ingeniera de Software · Oaxaca, México</p>
+      <h1 style="margin-top:14px">Fabiola Martínez <span>Rangel</span></h1>
+      <p class="role" data-es="Construyo para los momentos donde el software no puede fallar: el cierre del día, el diagnóstico, la decisión." data-en="I build for the moments when software cannot fail: the end-of-day close, the diagnosis, the decision.">Construyo para los momentos donde el software no puede fallar: el cierre del día, el diagnóstico, la decisión.</p>
+      <div class="contact">
+        <a class="chip primary" href="https://www.linkedin.com/in/fabiola-mtz-rangel" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="chip" href="https://github.com/FabRangel" target="_blank" rel="noopener">GitHub</a>
+        <button class="chip" type="button" data-copy="fgmr.rangel@gmail.com">fgmr.rangel@gmail.com</button>
+        <button class="chip" type="button" data-copy="+52 951 314 1284">+52 951 314 1284</button>
+      </div>
+      <div class="copied" id="copied" aria-live="polite"></div>
+    </div>
+    <div class="smear-box">
+      <div class="smear"><canvas id="smear" aria-label="Illustration of a stained blood smear with one detected blast cell"></canvas></div>
+      <p class="smear-cap" data-es="frotis de sangre periférica · tinción Wright-Giemsa" data-en="peripheral blood smear · Wright-Giemsa stain">frotis de sangre periférica · tinción Wright-Giemsa</p>
+    </div>
+  </header>
+
+  <section id="work">
+    <p class="label" data-es="Experiencia" data-en="Work">Experiencia</p>
+    <div class="stack">
+      <div>
+        <h2 data-es="Punto de venta para Dportenis" data-en="Point of sale for Dportenis">Punto de venta para Dportenis</h2>
+        <p class="meta" data-es="MisDesarrollos · Ingeniera de Software · Jun 2025 – presente · entregado Oct 2026" data-en="MisDesarrollos · Software Engineer · Jun 2025 – present · delivered Oct 2026">MisDesarrollos · Ingeniera de Software · Jun 2025 – presente · entregado Oct 2026</p>
+        <p data-es="Un nuevo POS para una cadena de tiendas deportivas. Integré SAP en los módulos que mueven inventario y dinero, y me aseguré de que cada día cerrara con documentos contables que cuadran." data-en="A new POS for a sporting-goods retail chain. I integrated SAP into the modules that move stock and money, and made sure every day closes with accounting documents that reconcile.">Un nuevo POS para una cadena de tiendas deportivas. Integré SAP en los módulos que mueven inventario y dinero, y me aseguré de que cada día cerrara con documentos contables que cuadran.</p>
+        <div class="flow" role="img" aria-label="Five POS modules feed SAP">
+          <div class="flow-grid">
+            <div class="mod" data-es="Ventas<small>tickets</small>" data-en="Sales<small>tickets</small>">Ventas<small>tickets</small></div>
+            <div class="mod" data-es="Devoluciones<small>notas de crédito</small>" data-en="Returns<small>credit notes</small>">Devoluciones<small>notas de crédito</small></div>
+            <div class="mod" data-es="Solicitudes inter-sucursal<small>artículo de otra tienda</small>" data-en="Inter-branch requests<small>item from another store</small>">Solicitudes inter-sucursal<small>artículo de otra tienda</small></div>
+            <div class="mod" data-es="Traspasos<small>movimientos de stock</small>" data-en="Transfers<small>stock moves</small>">Traspasos<small>movimientos de stock</small></div>
+            <div class="mod" data-es="Cierre de día<small>corte diario</small>" data-en="End-of-day close<small>daily cut</small>">Cierre de día<small>corte diario</small></div>
+            <div class="arrows" aria-hidden="true"><svg viewBox="0 0 600 28" preserveAspectRatio="none"><g stroke="currentColor" stroke-width="1.5" fill="none" style="color:var(--muted)"><path d="M60 0 V22 M180 0 V22 M300 0 V22 M420 0 V22 M540 0 V22"/></g></svg></div>
+            <div class="sap">SAP <span data-es="· documentos contables reconciliados en cada cierre" data-en="· accounting documents reconciled every close">· documentos contables reconciliados en cada cierre</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>Laboratorio Juárez</h3>
+        <p class="meta" data-es="Asistente de TI · Mar 2022 – 2025" data-en="IT Assistant · Mar 2022 – 2025">Asistente de TI · Mar 2022 – 2025</p>
+        <ul>
+          <li data-es="Desarrollé herramientas con React, Node.js y MongoDB para gestionar datos de médicos y recepción." data-en="Built React and Node.js tools with MongoDB to manage doctor and reception data.">Desarrollé herramientas con React, Node.js y MongoDB para gestionar datos de médicos y recepción.</li>
+          <li data-es="Analicé conjuntos de datos de resultados de laboratorio en Python para verificar su confiabilidad." data-en="Analyzed lab-result datasets in Python to check their reliability.">Analicé conjuntos de datos de resultados de laboratorio en Python para verificar su confiabilidad.</li>
+          <li data-es="Colaboré con el personal del laboratorio para convertir sus flujos de trabajo diarios en software." data-en="Worked with lab staff to turn their daily workflows into software.">Colaboré con el personal del laboratorio para convertir sus flujos de trabajo diarios en software.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <p class="label" data-es="Investigación" data-en="Research">Investigación</p>
+    <div class="pair">
+      <article class="card">
+        <h3 data-es="Identificación y clasificación de células en frotis de sangre periférica con YOLOv8" data-en="Cell identification and classification in peripheral blood smears with YOLOv8">Identificación y clasificación de células en frotis de sangre periférica con YOLOv8</h3>
+        <p class="meta">Universidad La Salle Oaxaca · 2024 – 2025</p>
+        <p data-es="Deep learning para diagnóstico temprano de enfermedades hematológicas. Recolecté y segmenté imágenes de frotis de sangre periférica, balanceé el dataset con augmentation y entrené YOLOv8 para detectar y clasificar células sanguíneas en 15 clases." data-en="Deep learning for early diagnosis of haematological diseases. I collected and segmented peripheral blood smear images, balanced the dataset with augmentation, and trained YOLOv8 to detect and classify blood cells across 15 classes.">Deep learning para diagnóstico temprano de enfermedades hematológicas. Recolecté y segmenté imágenes de frotis de sangre periférica, balanceé el dataset con augmentation y entrené YOLOv8 para detectar y clasificar células sanguíneas en 15 clases.</p>
+        <div class="stat">
+          <div>15<small data-es="CLASES DE CÉLULAS" data-en="CELL CLASSES">CLASES DE CÉLULAS</small></div>
+          <div>YOLOv8<small data-es="MODELO DE DETECCIÓN" data-en="DETECTION MODEL">MODELO DE DETECCIÓN</small></div>
+        </div>
+        <p class="pub" data-es="Proyecto de investigación · Universidad La Salle Oaxaca" data-en="Research project · Universidad La Salle Oaxaca">Proyecto de investigación · Universidad La Salle Oaxaca</p>
+      </article>
+      <article class="card">
+        <h3 data-es="Patrones de mortalidad ocupacional en la subcuenca Atoyac-Salado" data-en="Occupational mortality patterns in the Atoyac-Salado sub-basin">Patrones de mortalidad ocupacional en la subcuenca Atoyac-Salado</h3>
+        <p class="meta">IPN CIIDIR Oaxaca · 2024 – 2025</p>
+        <p data-es="Data mining sobre registros DGIS (1998–2023) para identificar relaciones entre actividades económicas y tasas de mortalidad en los 38 municipios de la subcuenca. Trabajo interdisciplinario con investigadores del IPN, Tec de Monterrey y SECIHTI." data-en="Data mining on DGIS records (1998–2023) to identify relationships between economic activities and mortality rates across the 38 sub-basin municipalities. Interdisciplinary work with researchers from IPN, Tec de Monterrey and SECIHTI.">Data mining sobre registros DGIS (1998–2023) para identificar relaciones entre actividades económicas y tasas de mortalidad en los 38 municipios de la subcuenca. Trabajo interdisciplinario con investigadores del IPN, Tec de Monterrey y SECIHTI.</p>
+        <div class="stat">
+          <div>1998–2023<small data-es="DATOS DGIS DE MORTALIDAD" data-en="DGIS MORTALITY DATA">DATOS DGIS DE MORTALIDAD</small></div>
+        </div>
+        <p class="pub" data-es="Colaboración de investigación · IPN CIIDIR Oaxaca" data-en="Research collaboration · IPN CIIDIR Oaxaca">Colaboración de investigación · IPN CIIDIR Oaxaca</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="label" data-es="Proyectos" data-en="Projects">Proyectos</p>
+    <div class="stack">
+      <div class="pair" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+        <article class="card">
+          <h3 data-es="Generador de reportes clínicos" data-en="Clinical report generator">Generador de reportes clínicos</h3>
+          <p class="meta">2026 · Python · ReportLab</p>
+          <p data-es="Extrae resultados de laboratorio desde la API de un sistema de información y genera reportes PDF personalizados, diseñados para reintegrarse al sistema." data-en="Pulls lab results from a laboratory information system's API and produces custom PDF reports, built to feed them back into the system.">Extrae resultados de laboratorio desde la API de un sistema de información y genera reportes PDF personalizados, diseñados para reintegrarse al sistema.</p>
+        </article>
+        <article class="card">
+          <h3>DinoMath</h3>
+          <p class="meta">2024 · JavaScript · Phaser 3</p>
+          <p data-es="Un juego para aprender la regla de tres: un dinosaurio come carnitas mientras escapa de un meteorito, y para seguir jugando hay que responder preguntas de proporciones basadas en tu propio puntaje." data-en="A game for learning the rule of three: a dinosaur eats carnitas while outrunning a meteor, and to keep playing you answer proportion questions built from your own score.">Un juego para aprender la regla de tres: un dinosaurio come carnitas mientras escapa de un meteorito, y para seguir jugando hay que responder preguntas de proporciones basadas en tu propio puntaje.</p>
+          <p style="margin-top:8px;display:flex;gap:16px;flex-wrap:wrap">
+            <a href="https://dino-math.vercel.app/" target="_blank" rel="noopener" data-es="Jugar" data-en="Play it">Jugar</a>
+            <a href="https://github.com/FabRangel/DinoMath" target="_blank" rel="noopener" data-es="Código" data-en="Code">Código</a>
+          </p>
+        </article>
+        <article class="card">
+          <h3>INRight</h3>
+          <p class="meta" data-es="2025 · App Android" data-en="2025 · Android app">2025 · App Android</p>
+          <p data-es="App móvil que calcula cuánto medicamento anticoagulante debe tomar cada paciente según su perfil." data-en="A mobile app that tells patients on anticoagulants how much of their medication to take.">App móvil que calcula cuánto medicamento anticoagulante debe tomar cada paciente según su perfil.</p>
+        </article>
+      </div>
+      <div>
+        <h3 style="font-size:18px;margin-bottom:6px" data-es="DinoMath — pruébalo aquí" data-en="DinoMath — try it here">DinoMath — pruébalo aquí</h3>
+        <div class="game-wrap">
+          <iframe src="https://dino-math.vercel.app/" title="DinoMath" allow="autoplay" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+        </div>
+        <p class="game-note" data-es="Si no carga, abre la versión completa: <a href='https://dino-math.vercel.app/' target='_blank' rel='noopener'>dino-math.vercel.app</a>" data-en="If it doesn't load, open the full version: <a href='https://dino-math.vercel.app/' target='_blank' rel='noopener'>dino-math.vercel.app</a>">Si no carga, abre la versión completa: <a href="https://dino-math.vercel.app/" target="_blank" rel="noopener">dino-math.vercel.app</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <p class="label" data-es="Habilidades" data-en="Skills">Habilidades</p>
+    <div class="skills">
+      <div>
+        <h3 data-es="Integración &amp; backend" data-en="Integration &amp; backend">Integración &amp; backend</h3>
+        <div class="tags"><span class="tag">SAP</span><span class="tag">Node.js</span><span class="tag">REST APIs</span><span class="tag">MongoDB</span></div>
+      </div>
+      <div>
+        <h3 data-es="Frontend &amp; móvil" data-en="Frontend &amp; mobile">Frontend &amp; móvil</h3>
+        <div class="tags"><span class="tag">React</span><span class="tag">Ionic</span></div>
+      </div>
+      <div>
+        <h3 data-es="ML &amp; visión" data-en="ML &amp; vision">ML &amp; visión</h3>
+        <div class="tags"><span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">TensorFlow</span><span class="tag">OpenCV</span><span class="tag">Scikit-learn</span></div>
+      </div>
+      <div>
+        <h3 data-es="Datos" data-en="Data">Datos</h3>
+        <div class="tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Jupyter</span><span class="tag">Plotly</span><span class="tag">Git</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span data-es="Ing. en Software · Universidad La Salle Oaxaca" data-en="B.S. Software Engineering · Universidad La Salle Oaxaca">Ing. en Software · Universidad La Salle Oaxaca</span>
+    <span data-es="Español (nativo) · Inglés (avanzado)" data-en="Spanish (native) · English (advanced)">Español (nativo) · Inglés (avanzado)</span>
+  </footer>
+</div>
+
+<script>
+/* Copy chips */
+document.querySelectorAll('[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var v=b.getAttribute('data-copy'),out=document.getElementById('copied');
+    try{navigator.clipboard.writeText(v).then(function(){out.textContent='Copied: '+v;},function(){out.textContent=v;});}catch(e){out.textContent=v;}
+  });
+});
+
+/* Language switch */
+(function(){
+  var lang='es';
+  function applyLang(l){
+    lang=l;
+    document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active',b.dataset.lang===l);});
+    document.querySelectorAll('[data-'+l+']').forEach(function(el){
+      var val=el.getAttribute('data-'+l);
+      if(el.tagName==='A'){el.textContent=val;}
+      else{el.innerHTML=val;}
+    });
+    document.documentElement.lang=l==='es'?'es':'en';
+  }
+  document.querySelectorAll('.lang-btn').forEach(function(b){
+    b.addEventListener('click',function(){applyLang(b.dataset.lang);});
+  });
+  applyLang('es');
+})();
+
+/* Blood smear animation */
+(function(){
+  var c=document.getElementById('smear'); if(!c) return;
+  var ctx=c.getContext('2d'),cells=[],W=0,dpr=Math.min(window.devicePixelRatio||1,2);
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function css(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();}
+  function rnd(a,b){return a+Math.random()*(b-a);}
+  function size(){
+    var r=c.getBoundingClientRect();W=r.width;c.width=W*dpr;c.height=W*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    if(!cells.length){
+      for(var i=0;i<26;i++) cells.push({x:rnd(0,1),y:rnd(0,1),r:rnd(.045,.065),vx:rnd(-.0004,.0004),vy:rnd(-.0004,.0004),k:'rbc'});
+      cells.push({x:.42,y:.46,r:.11,vx:.00012,vy:-.0001,k:'blast'});
+      cells.push({x:.74,y:.7,r:.075,vx:-.0002,vy:.00015,k:'wbc'});
+    }
+  }
+  function draw(){
+    var cell=css('--cell'),nuc=css('--nucleus'),stain=css('--stain'),bg=css('--stain-soft');
+    ctx.fillStyle=bg;ctx.fillRect(0,0,W,W);
+    cells.forEach(function(p){
+      if(!reduce){p.x+=p.vx;p.y+=p.vy;if(p.x<-.1)p.x=1.1;if(p.x>1.1)p.x=-.1;if(p.y<-.1)p.y=1.1;if(p.y>1.1)p.y=-.1;}
+      var x=p.x*W,y=p.y*W,r=p.r*W;
+      if(p.k==='rbc'){
+        ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle=cell;ctx.globalAlpha=.85;ctx.fill();
+        ctx.beginPath();ctx.arc(x,y,r*.45,0,7);ctx.fillStyle=bg;ctx.globalAlpha=.55;ctx.fill();ctx.globalAlpha=1;
+      }else{
+        ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle=cell;ctx.globalAlpha=.6;ctx.fill();ctx.globalAlpha=1;
+        ctx.beginPath();ctx.arc(x+r*.05,y-r*.04,r*(p.k==='blast'?.78:.55),0,7);ctx.fillStyle=nuc;ctx.globalAlpha=.9;ctx.fill();ctx.globalAlpha=1;
+        if(p.k==='blast'){
+          var b=r*1.25;ctx.strokeStyle=stain;ctx.lineWidth=2;ctx.strokeRect(x-b,y-b,b*2,b*2);
+          ctx.font='500 '+Math.max(11,W*.032)+'px "IBM Plex Mono",monospace';var t='blast';
+          var tw=ctx.measureText(t).width+10,th=Math.max(11,W*.032)+8;
+          ctx.fillStyle=stain;ctx.fillRect(x-b-1,y-b-th,tw,th);
+          ctx.fillStyle=css('--bg');ctx.fillText(t,x-b+4,y-b-6);
+        }
+      }
+    });
+    if(!reduce) requestAnimationFrame(draw);
+  }
+  size();draw();
+  window.addEventListener('resize',function(){size();if(reduce)draw();});
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(reduce)draw();});
+})();
+</script>
+
+</body></html>
